@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Blog 2025-06-30</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6F8VVR3WH"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-W6F8VVR3WH');
+</script>
+
+<body>
+	<header>
+		<h2>Blog 2025-06-30</h2>
+		<aside>
+			<p><< <a href="../">Back to main</a></p>
+			<p><< <a href="../blog">List of blogs</a></p>
+		</aside>
+	</header>
+
+	<hr>
+
+	<main>
+		<h3>Learning more C++</h3>
+		<p>
+			Today I was learning some more C++, continuing my beautiful journey.
+			It has been fun so far, and I am actually finding it interesting - and so far
+			I seem to like C++ more than other usual kind of OOP languages that I have
+			used in the past. It has this very interesting form to it - that everything
+			is super strict, yet the same time very versatile. I like it a lot, and I
+			feel like I am learning a lot of new things, which is making it fun for me.
+		</p>
+		<p>
+			The biggest learning today was the `inline` keyword, in terms of overriding the << operator for std::ostream. I
+			found out that even if I have the header guards for an .hpp file, it will only protect you from including
+			the header file twice within the same .cpp or .hpp file. So if we define a function in the .hpp globally,
+			and then include that header file in multiple other files, we will get a bunch of errors because the same
+			function will now exist in multiple locations. Therefore, it is best to just write the prototype for the
+			function in the .hpp file, and have the actual definition of it in the .cpp. A cool workaround that I found
+			- in case you really really want to have the definition of the function in the header file, is to define it
+			as "inline" . This keyword tells the compiler that if this function is included multiple times, just treat
+			it all as one same function. Alternatively you can also define a function directly inside the definition of
+			a class, since functions defined within a class, are automatically "inline". 
+		</p>
+
+		<h3>Starting to learn Angular</h3>
+		<p>
+			I was replied by a company that I messaged for a job offer. It seems like a cool company, so I am happy they
+			replied to me. And they also gave me a small trial task to do in Angular. Since I have never done anything
+			in Angular before, and have mainly concentrated myself on React, it will be a very nice challenge for me.
+			Not to say that I would be concentrating myself on this project full-time, as this is sadly not possible for
+			me - I will gladly use this as a very positive excuse to finally take it upon myself to learn Angular - no
+			matter if I will end up getting the job or not. 
+		</p>
+	</main>
+</body>
+
+</html>
